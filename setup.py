@@ -11,7 +11,7 @@ def read_file(name):
 readme = read_file('README.txt')
 changes = read_file('CHANGES.txt')
 
-setup(name='djangorecipe',
+setup(name='djangomaker',
       version=version,
       description="Buildout recipe for Django",
       long_description='\n\n'.join([readme, changes]),
@@ -37,6 +37,6 @@ setup(name='djangorecipe',
       entry_points="""
       # -*- Entry points: -*-
       [zc.buildout]
-      default = djangorecipe.recipe:Recipe
+      default = djangomaker.recipe:Recipe
       """,
       )
